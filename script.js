@@ -5,6 +5,8 @@ function getComputerChoice(choice) {
 }
 console.log(getComputerChoice(choice));
 
+
+
 function playRound(playerSelection, computerSelection) {
     if(playerSelection === computerSelection){
       return `It's a tie! You both picked ${playerSelection}`;
@@ -24,5 +26,16 @@ function playRound(playerSelection, computerSelection) {
 }
  
 const playerSelection = prompt("Choose Your Weapon !");
-const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
+const computerSelection = getComputerChoice(choice);
+console.log(playRound(playerSelection, computerSelection));
+
+function game(){
+    for(let i = 0; i < 5; i++){
+      const playerSelection = prompt("Choose Your Weapon !");
+      const computerSelection = getComputerChoice(choice);
+      const currentRound = playRound(playerSelection, computerSelection);
+      console.log(currentRound);
+    }
+}
+
+game()
