@@ -30,7 +30,7 @@ const computerSelection = getComputerChoice(choice);
 console.log(playRound(playerSelection, computerSelection));
 
 function game(){
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 4; i++){
       const playerSelection = prompt("Choose Your Weapon !");
       const computerSelection = getComputerChoice(choice);
       const currentRound = playRound(playerSelection, computerSelection);
